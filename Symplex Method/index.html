@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="assets/images/icon.jpg"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/script.js"></script>
+	<title>Simplex Method</title>
+</head>
+<body onload="Val()">
+	<div class="website_wrapper">
+		<header class="text-center bg-dark p-2">
+			<h1>Simplex Method</h1>
+		</header>
+		<section class="container p-4 my-5">
+			<div class="table_style my-4 bg-dark p-3 shadow-lg">
+				<table id="table" class="table table-dark">
+				  	<thead>
+				    	<tr>
+				      		<th scope="col">#</th>
+				      		<th scope="col">B</th>
+				      		<th scope="col">CBeta</th>
+				      		<th scope="col">Beta</th>
+				      		<th scope="col">x1<sup>2</sup></th>
+				      		<th scope="col">x2<sup>-7</sup></th>
+				      		<th scope="col">x3<sup>1</sup></th>
+				      		<th scope="col">x4<sup>0</sup></th>
+				      		<th scope="col">x5<sup>0</sup></th>
+				      		<th scope="col">x6<sup>0</sup></th>
+				      		<th scope="col">x7<sup>M</sup></th>
+				      		<th scope="col">x8<sup>M</sup></th>
+				    	</tr>
+				  	</thead>
+				  	<tbody>
+				    	<tr>
+				      		<th scope="row">1</th>
+				      		<td>x6</td>
+							<td>0</td>
+							<td>750</td>
+							<td id="a0"> </td>
+							<td id="a1"> </td>
+							<td id="a2"> </td>
+							<td id="a3"> </td>
+							<td id="a4"> </td>
+							<td id="a5"> </td>
+							<td id="a6"> </td>
+							<td id="a7"> </td>
+				    	</tr>
+				    	<tr>
+				      		<th scope="row">2</th>
+				      		<td>x7</td>
+							<td>M</td>
+							<td>290</td>
+							<td id="b0"> </td>
+							<td id="b1"> </td>
+							<td id="b2"> </td>
+							<td id="b3"> </td>
+							<td id="b4"> </td>
+							<td id="b5"> </td>
+							<td id="b6"> </td>
+							<td id="b7"> </td>
+				    	</tr>
+				    	<tr>
+				      		<th scope="row">3</th>
+						    <td>x8</td>
+							<td>M</td>
+							<td>300</td>
+							<td id="c0"> </td>
+							<td id="c1"> </td>
+							<td id="c2"> </td>
+							<td id="c3"> </td>
+							<td id="c4"> </td>
+							<td id="c5"> </td>
+							<td id="c6"> </td>
+							<td id="c7"> </td>
+				    	</tr>
+				    	<tr class="sum">
+							<td colspan="4" id="d0">Z0=д0=</td>
+							<td id="d1">д1= </td>
+							<td id="d2">д2= </td>
+							<td id="d3">д3= </td>
+							<td id="d4">д4= </td>
+							<td id="d5">д5= </td>
+							<td id="d6">д6= </td>
+							<td id="d7">д7= </td>
+							<td id="d8">д8= </td>
+						</tr>
+				  	</tbody>
+				</table>
+				<button onclick="Sum()" type="button" class="btn btn-danger">Calculate Deltas</button>
+			</div>
+		</section>
+		<footer class="bg-dark ">
+			<div class="container">
+		  		<div class="row p-4">
+		    		<div class="col-4">
+		      			<img class="img-fluid" src="assets/images/mypic.jpg" alt="Ahter Shenol">
+		    		</div>
+		    		<div class="col-8">
+		      			<p>I am Alper Kyoseolu student in the Technical University of Varna</p>
+		      			<p>I created this project using HTML, CSS, Bootstrap5 JavaScript because I am interested in developing in the field of Front End Development.</p>
+		      			<p>Thank you for your attention!</p>
+		      			<ul class="list_style">
+		      				<li><a href="https://www.facebook.com/alper.kerim.3"><i class="fa-brands fa-facebook"></i> FaceBook</a></li>
+		      				<li><a href="https://www.instagram.com/iamalperkyoseolu/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+		      				<li><a href="index.html"><i class="fa-solid fa-arrows-rotate"></i> Refresh Page</a></li>
+		      			</ul>
+		    		</div>
+		  		</div>
+			</div>	
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

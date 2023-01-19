@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.website_wrapper {
+	color: #fff;
+	background-image: url("../images/bg.jpg");
+	text-align: justify;
+	background-position: bottom;
+    background-size: contain;
+}
+h1	{
+	font-family: 'Lobster', cursive;
+	font-size: 48px;
+}
+/*Section Table*/
+.table_style {
+	border: 2px solid #dc3545;
+	border-radius: 10px;
+}
+/* Footer */
+.website_wrapper footer img {
+	width: 200px;
+    height: auto;
+    border-radius: 35vh;
+}
+.website_wrapper footer p {
+	padding-left: 5px;
+	border-left: solid 3px #dc3545;
+}
+.website_wrapper footer .list_style {
+	list-style: none;
+	display: inline-flex;
+}
+.website_wrapper footer .list_style li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+}
+.website_wrapper footer .list_style li a:hover {
+	color: #dc3545;
+}
+.website_wrapper footer .list_style li a i {
+	color: #dc3545;
+	font-size: 16px;
+}
+@media screen and (max-width: 777px) {
+	.table_style {
+		font-size: 10px;
+		width: 100%;
+	}
+	.p-4 {
+		padding: 0;
+	}
+}
