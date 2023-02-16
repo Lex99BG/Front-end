@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(120deg, #4ba0d8, #4a3bd4 );
+    color: #fff;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    min-height: 100vh;
+}
+header {
+    font-size: 1.5rem;
+}
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: #fff;
+    box-shadow: rgba(207, 199, 204, 0.4) 5px 5px, rgba(216, 191, 207, 0.3) 10px 10px, rgba(197, 197, 197, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+form input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+form button {
+    background-color: #efbe1c;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover {
+    background-color: #9eef1c;
+}
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.todo-list {
+    list-style: none;
+    min-width: 30%;
+}
+.todo {
+    margin: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 1rem;
+    transition: all 0.5s ease;
+}
+.todo li {
+    flex: 1;
+}
+.complete-btn, .trash-btn {
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.complete-btn {
+    background-color: #9eef1c;
+}
+.complete-btn:hover {
+    background-color: #2eef1c;
+} 
+.trash-btn {
+    background-color: #d64e33;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.trash-btn:hover {
+    background-color: #e63a17;
+}
+.fa-trash, .fa-check {
+    pointer-events: none;
+} 
+.completed {
+    text-decoration: line-through;
+    text-decoration-thickness: 0.8px;
+    opacity: 0.7;
+}
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
